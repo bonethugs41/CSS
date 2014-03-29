@@ -1,7 +1,7 @@
 CSS
 ===========
 
-This repository holds my home works for:
+This repository holds my homeworks for:
 Telerik Academy - CSS (April 2014)
 
 Course Program
