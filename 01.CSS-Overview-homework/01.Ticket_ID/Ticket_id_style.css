@@ -1,6 +1,36 @@
-﻿table {
-    background-color:hsl(153, 17%, 35%);
+﻿div, table, tr, td, p, body, th {
+    margin: 0; padding: 0;
 }
-thead {
-    font-family: Italic;
+* {
+    font-family:sans-serif; color:#bcbcbc;
+}
+th {
+    text-align:left; font-size:25px; height:50px; vertical-align:top; 
+}
+table {
+    background-color:#595959;
+}
+td{
+    height:40px;
+}
+.td1 {
+    text-align:left; width:150px; font-style:italic; color:#eeeeee;
+}
+.td2 {
+    text-align:left; width:200px;
+}
+.orange_text{
+    color:orange;
+}
+.white_text{
+    color:antiquewhite;
+}
+.red_text{
+    color:indianred; vertical-align:top;
+}
+a:link{
+     color: #e1c48a; text-decoration: none;
+}
+a:visited{
+     color: #e1c48a; text-decoration: none;
 }

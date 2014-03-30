@@ -19,7 +19,7 @@
                 <td class="td2, white_text"><img src="imgs\green_dot.png" alt="greenDot" />Gosho ot Pochivka</td>
             </tr>
             <tr>
-                <td class ="td1">&nbsp;</td>
+                <td class ="td1">&nbsp;</tdclass>
                 <td class="td2, red_text">No active support</td>
             </tr>
             <tr>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Countries</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Contact name</td>
+                <td>City</td>
+                <td>Country</td>
+                <td>Is Promoted</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria Anders</td>
+                <td>Berlin</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ana Trujillo</td>
+                <td>Mexico D.F.</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Antonio Moreno</td>
+                <td>Mexico D.F.</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Thomas Hardy</td>
+                <td>London</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

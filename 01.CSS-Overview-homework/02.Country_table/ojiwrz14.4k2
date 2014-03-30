@@ -1,0 +1,9 @@
+﻿td, table, tr, thead{
+    margin: 0; padding: 0;
+}
+thead{
+    background-color:#0eb107;
+}
+table{
+    border-collapse:collapse;
+}
