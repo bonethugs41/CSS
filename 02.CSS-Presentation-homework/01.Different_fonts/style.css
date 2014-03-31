@@ -1,0 +1,15 @@
+﻿p {
+    color: #0094ff;
+    font-family: Consolas;
+    text-align:justify;
+}
+p:first-letter{
+    font-family:'Edwardian Script ITC';
+    font-size:40px;
+}
+p:first-line{
+    font-weight:bold;
+}
+div{
+    width:500px;
+}

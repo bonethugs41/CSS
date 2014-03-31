@@ -1,0 +1,10 @@
+﻿body div {
+    border-radius: 150px;
+    padding: 0px;
+    padding-right: 15px;
+    background-color: black;
+    border: solid;
+    border-width: 3px;
+    border-color: red;
+    
+}
