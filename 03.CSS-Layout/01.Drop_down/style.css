@@ -1,0 +1,56 @@
+﻿@font-face 
+{
+    font-family: Capture_it;
+    src: url(Resources/Capture_it.ttf);
+}
+
+body 
+{
+    background-color:#4c8e35;
+}
+
+ul 
+{
+    list-style-type: none;
+}
+
+a 
+{
+    font-family: Capture_it;
+    color:#780303;
+    text-decoration:none;
+}
+
+ul.Main
+{
+        font-size:2.5em;
+        display:inline-block;
+}
+
+ul.FirstSub
+{
+        font-size:1em;
+        display:none;
+        position:static;
+        float:;
+}
+
+ul.SecondSub
+{
+    font-size:1em;
+    display:none;
+    position:relative;
+}
+
+a:hover
+{
+    text-decoration:underline;
+}
+
+ul li:hover > a + ul
+{
+    clear:;
+    float:;
+    display:block;
+    clear:both;
+}
