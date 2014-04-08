@@ -1,2 +1,32 @@
-﻿body {
+﻿body, aside, section, div, ul {
+    padding: 0;
+    margin: 0;
+    border: 0px solid;
+}
+
+aside.left {
+    margin-left:5px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin:0;
+    margin-top:20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+aside.left > ul > li > a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #a83434;
+    padding-top: 10px;
+}
+
+aside.left > ul > li {
+    padding-top: 20px;
 }
