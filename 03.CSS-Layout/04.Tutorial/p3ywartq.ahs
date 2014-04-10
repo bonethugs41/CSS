@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CSS Tutorial</title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <aside class="left">
+        <h2>HOME</h2>
+        <ul>
+            <li><a href="#">CSS Basic</a></li>
+            <ul>
+                <li><a href="#">CSS Introduction</a></li>
+                <li><a href="#">CSS Syntax</a></li>
+                <li><a href="#">CSS How To</a></li>
+                <li><a href="#">CSS Background</a></li>
+                <li><a href="#">CSS Text</a></li>
+                <li><a href="#">CSS Font</a></li>
+                <li><a href="#">CSS Border</a></li>
+                <li><a href="#">CSS Outline</a></li>
+                <li><a href="#">CSS Margin</a></li>
+                <li><a href="#">CSS Padding</a></li>
+                <li><a href="#">CSS List</a></li>
+                <li><a href="#">CSS Table</a></li>
+            </ul>
+            <li><a href="#">CSS Advanced</a></li>
+            <ul>
+                <li><a href="#">CSS Dimension</a></li>
+                <li><a href="#">CSS Classification</a></li>
+                <li><a href="#">CSS Positioning</a></li>
+                <li><a href="#">CSS Pseudo-class</a></li>
+                <li><a href="#">CSS Pseudo-element</a></li>
+                <li><a href="#">CSS Image Gallery</a></li>
+                <li><a href="#">CSS Image Opacity</a></li>
+                <li><a href="#">CSS Media Types</a></li>
+                <li><a href="#">CSS Dont't</a></li>
+                <li><a href="#">CSS Summary</a></li>
+            </ul>
+            <li><a href="#">CSS Examples</a></li>
+            <ul>
+                <li><a href="#">CSS Examples</a></li>
+            </ul>
+            <li><a href="#">References</a></li>
+            <ul>
+                <li><a href="#">CSS2 Reference</a></li>
+                <li><a href="#">CSS2 Print</a></li>
+                <li><a href="#">CSS2 Aural</a></li>
+                <li><a href="#">CSS Units</a></li>
+                <li><a href="#">CSS Colors</a></li>
+                <li><a href="#">CSS Colorvalues</a></li>
+                <li><a href="#">CSS Colornames</a></li>
+            </ul>
+            <li><a href="#">CSS Quiz</a></li>
+            <ul>
+                <li><a href="#">CSS Quiz</a></li>
+                <li><a href="#">CSS Exam</a></li>
+            </ul>
+        </ul>
+    </aside>
+    <section>
+        <h1>CSS Tutorial</h1>
+        <div>
+            <button>Previous</button>
+            <button>Next</button>
+        </div>
+    </section>
+    <aside></aside>
+</body>
+</html>

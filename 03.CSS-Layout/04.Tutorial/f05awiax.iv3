@@ -1,7 +1,6 @@
-﻿body, aside, section, div, ul, h2, h3, h1, p, a, article {
+﻿body, aside, section, div, ul, h2, h3, h1 {
     padding: 0;
     margin: 0;
-    border: 0px solid black;
 }
 
 body {
@@ -33,7 +32,7 @@ a {
 }
 
 aside.left > ul > li > a {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     color: #a83434;
     padding-top: 10px;
@@ -68,20 +67,15 @@ aside.right a {
 
 h1 {
     font-family: Calibri;
-    font-size: 2em;
-    font-weight: 400;
+    font-size:2em;
+    font-weight:400;
 }
 
-aside.left h2 {
-}
-
-section h2 {
+h2 {
     font-size: 1.25em;
-    font-weight: 400;
-    margin-top: 5px;
-    font-family: Calibri;
-    background-color: gray;
-    color: white;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 20px;
 }
 
 h3 {
@@ -127,13 +121,7 @@ section {
     padding: 5px;
     background-color: white;
     border: 1px solid gray;
-    width: 600px;
 }
-
-    section header {
-        border-bottom: 3px solid darkgray;
-        margin-bottom: 3px;
-    }
 
     section button {
         width: 110px;
@@ -141,38 +129,7 @@ section {
         font-family: Calibri;
         border-radius: 0;
         border: 2px solid black;
-        margin: 5px 0px;
+        padding: 0;
         background-color: white;
         font-weight: 400;
     }
-
-    section a {
-        color: darkred;
-        text-decoration: underline;
-        padding-left: 2px;
-        padding-right: 2px;
-        display: block;
-        text-align: left;
-    }
-
-    section p {
-        margin: 15px 5px;
-    }
-
-p.bold {
-    font-weight: bold;
-}
-
-footer {
-    border-top: 3px solid gray;
-    border-bottom: 3px solid gray;
-    margin-bottom: 30px;
-    margin-top: 10px;
-}
-
-section img{
-    display:inline-block;
-    float:left;
-    width:150px;
-    height:120px;
-}
