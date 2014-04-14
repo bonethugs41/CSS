@@ -13,6 +13,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "04.Tutorial", "04.Tutorial\
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "05.Sell_list", "05.Sell_list\05.Sell_list.vbproj", "{2B706302-926D-4DAE-89F8-D540C9D0AA46}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "06.News_site", "06.News_site\06.News_site.vbproj", "{006D717B-3397-4D66-8BA2-65F802B88600}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2B706302-926D-4DAE-89F8-D540C9D0AA46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B706302-926D-4DAE-89F8-D540C9D0AA46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B706302-926D-4DAE-89F8-D540C9D0AA46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{006D717B-3397-4D66-8BA2-65F802B88600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006D717B-3397-4D66-8BA2-65F802B88600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006D717B-3397-4D66-8BA2-65F802B88600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006D717B-3397-4D66-8BA2-65F802B88600}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
