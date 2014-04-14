@@ -1,0 +1,83 @@
+﻿body, header, section, nav, ul, li, a, aside {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    height: 60px;
+}
+
+#main {
+    width: 55%;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+#navi {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    list-style-type: none;
+    padding: 1% 0 1% 0;
+}
+
+    #navi li {
+        display: inline-block;
+    }
+
+        #navi li a {
+            color: #00ACF0;
+            font-weight: bold;
+        }
+
+body {
+    font-family: Calibri;
+    height: 100%;
+}
+
+header {
+    border-bottom: 1px solid #404040;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+aside {
+    float: right;
+    position:relative;
+    top:-300px;
+    right:50px;
+    text-align:center;
+    padding-top: 10px;
+    width: 33%;
+}
+
+    aside ul {
+        list-style-type: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+        aside ul li input {
+            width: 100%;
+        }
+
+section {
+    width: 65%;
+    margin: 1%;
+    padding: 0% 1%;
+}
+
+    section fieldset {
+        float: left;
+        width: 40%;
+    }
+
+        section fieldset ul {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        section fieldset legend {
+            padding: 0px 10px 0px 10px;
+        }
