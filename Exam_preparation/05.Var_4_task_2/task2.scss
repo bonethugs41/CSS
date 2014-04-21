@@ -1,0 +1,120 @@
+html,
+body,
+div,
+form,
+fieldset,
+legend,
+label,
+input,
+button
+{
+	margin: 0;
+	padding: 0;
+}
+
+@mixin linear-gradient($from-color,$from-pos,$to-color,$to-pos) 
+{
+    background: $to-color;
+    background: -moz-linear-gradient(top, $from-color $from-pos, $to-color $to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($from-pos,$from-color), color-stop($to-pos,$to-color));
+    background: -webkit-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -o-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -ms-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: linear-gradient(to bottom, $from-color $from-pos,$to-color $to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${from-color}', endColorstr='${to-color}',GradientType=0 );
+}
+
+body
+{
+	$default-font-size: 16px;
+    $default-font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    $default-font-color: #000;
+	font-size: $default-font-size;
+	font-family: $default-font-family;
+	color: $default-font-color;
+
+	#wrapper
+	{	
+		width: 960px;
+
+		div
+		{
+			
+			border-radius: 5px;
+			background: #CCCCCC;
+			display: inline-block;
+			margin-left: 25px;
+			margin-top: 25px;
+			
+
+			&:after
+			{
+				/*
+				clear: both;
+				content: "";
+				display: block;
+				height: 0;
+				*/
+			}
+
+			.holder
+			{
+				float: left;
+				width: 550px;
+				margin: 10px;
+
+				img
+				{
+					width: 550px;
+					border-radius: 5px;
+				}
+			}
+
+			.playlist
+			{
+				margin: 0px 10px;
+				margin-top: 5px;
+				
+				ul
+				{
+					list-style-type: none;
+					padding-left: 0px;
+					padding-top: 0;
+					
+					li
+					{
+						display: block;
+						text-align: center;
+						width: 120px;
+						border-bottom: 1px solid black;
+						margin-bottom: 5px;
+						padding-bottom: 5px;
+						position: relative;
+						top: -10px;
+
+						a
+						{
+							text-decoration: none;
+							color: black;
+							font-weight: bold;
+
+							img
+							{
+								display: block;
+								left: 12px;
+								position: relative;
+								border-radius: 10px;
+							}
+
+							&:hover
+							{
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+			}
+			
+		}
+	}
+}

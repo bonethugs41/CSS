@@ -1,0 +1,66 @@
+html,
+body,
+div,
+form,
+fieldset,
+legend,
+label,
+input,
+button {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px;
+  font-family: Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
+  color: black; }
+  body #wrapper {
+    width: 960px; }
+    body #wrapper div {
+      border-radius: 5px;
+      background: #CCCCCC;
+      display: inline-block;
+      margin-left: 25px;
+      margin-top: 25px; }
+      body #wrapper div:after {
+        /*
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+        */ }
+      body #wrapper div .holder {
+        float: left;
+        width: 550px;
+        margin: 10px; }
+        body #wrapper div .holder img {
+          width: 550px;
+          border-radius: 5px; }
+      body #wrapper div .playlist {
+        margin: 0px 10px;
+        margin-top: 5px; }
+        body #wrapper div .playlist ul {
+          list-style-type: none;
+          padding-left: 0px;
+          padding-top: 0; }
+          body #wrapper div .playlist ul li {
+            display: block;
+            text-align: center;
+            width: 120px;
+            border-bottom: 1px solid black;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            position: relative;
+            top: -10px; }
+            body #wrapper div .playlist ul li a {
+              text-decoration: none;
+              color: black;
+              font-weight: bold; }
+              body #wrapper div .playlist ul li a img {
+                display: block;
+                left: 12px;
+                position: relative;
+                border-radius: 10px; }
+              body #wrapper div .playlist ul li a:hover {
+                text-decoration: underline; }
+

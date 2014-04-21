@@ -1,0 +1,88 @@
+html,
+body,
+div,
+form,
+fieldset,
+legend,
+label,
+input,
+button
+{
+	margin: 0;
+	padding: 0;
+}
+
+@mixin linear-gradient($from-color,$from-pos,$to-color,$to-pos) 
+{
+    background: $to-color;
+    background: -moz-linear-gradient(top, $from-color $from-pos, $to-color $to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($from-pos,$from-color), color-stop($to-pos,$to-color));
+    background: -webkit-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -o-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -ms-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: linear-gradient(to bottom, $from-color $from-pos,$to-color $to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${from-color}', endColorstr='${to-color}',GradientType=0 );
+}
+
+body
+{
+	$default-font-size: 16px;
+    $default-font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+    $default-font-color: #000;
+	font-size: $default-font-size;
+	font-family: $default-font-family;
+	color: $default-font-color;
+
+	#wrapper
+	{	
+	width: 960px;
+
+		div
+		{
+			margin-left: 25px;
+			margin-top: 25px;
+			@include linear-gradient(#DE28FF, 15%, #F9DBFF, 85%);
+			border: 1px solid black;
+			border-radius: 15px;
+			padding: 0px 35px;
+			position: relative;
+
+			h1
+			{
+				font-size: 1.8em;
+			}
+
+			p.postedby
+			{
+				border-bottom: 1px solid black;
+				border-top: 1px solid black;
+				width: 380px;
+				text-align: center;
+				padding: 5px 15px;
+				margin: 0px 15px;
+				display: inline-block;
+			}
+
+			p.info
+			{
+				text-align: justify;
+			}
+
+			img
+			{
+				position: absolute;
+				top: 40%;
+			}
+
+			img.left-arrow
+			{
+				left: 0px;
+			}
+
+			img.right-arrow
+			{
+				right: 0px;
+			}
+		}
+	}
+}

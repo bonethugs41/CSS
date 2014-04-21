@@ -1,0 +1,109 @@
+html, body, div, h1, ul, li, a, form, button {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin linear-gradient($from-color,$from-pos,$to-color,$to-pos) 
+{
+    background: $to-color;
+    background: -moz-linear-gradient(top, $from-color $from-pos, $to-color $to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($from-pos,$from-color), color-stop($to-pos,$to-color));
+    background: -webkit-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -o-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -ms-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: linear-gradient(to bottom, $from-color $from-pos,$to-color $to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${from-color}', endColorstr='${to-color}',GradientType=0 );
+}
+
+
+body 
+{
+    $default-font-size: 16px;
+    $default-font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+    $default-font-color: #333;
+	width: 960px;
+	font-family: $default-font-family;
+	font-size: $default-font-size;
+	color: $default-font-color;
+
+	#wrapper
+	{
+		form
+		{
+			@include linear-gradient(#68D1FF, 0%, #8CFFFB, 100%);
+			border: 1px solid black;
+			border-radius: 15px;
+			margin-left: 50px;
+			margin-top: 50px;
+			width: 380px;
+			text-align: right;
+			padding: 15px;
+
+			fieldset
+			{
+				border: 3px solid #333;
+				border-radius: 5px;
+				padding: 5px 15px;
+
+				legend
+				{
+					font-style: italic;
+					text-align: right;
+					padding:  0px 20px;
+					font-size: 1.3em;
+					margin-left: 80px;
+				}
+
+				input
+				{
+					@include linear-gradient(#68D1FF, 0%, #8CFFFB, 100%);
+					border: 1px solid #008FCE;
+					border-radius: 5px;
+					padding: 5px 15px;
+					color: #333;
+				}
+
+				label
+				{
+					display: inline-block;
+					margin-top: 5px;
+				}
+			}
+
+			button
+			{
+				border: none;
+				border-bottom: 1px solid black;
+				border-radius: 5px;
+				font-size: 1.1em;
+				color:#333;
+				padding: 5px 15px;
+				@include linear-gradient(#68D1FF, 0%, #8CFFFB, 100%);
+				margin-top: 15px;
+
+				&:hover
+				{
+					background:#9BE1FF;
+				}
+			}
+
+			input[type="reset"]
+			{
+				border: none;
+				border-bottom: 1px solid black;
+				border-radius: 5px;
+				font-size: 1.1em;
+				color:#333;
+				padding: 5px 15px;
+				@include linear-gradient(#68D1FF, 0%, #8CFFFB, 100%);
+				margin-top: 15px;
+
+				&:hover
+				{
+					background:#9BE1FF;
+				}
+			}
+		}
+	}
+
+}

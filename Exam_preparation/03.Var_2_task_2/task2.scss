@@ -1,12 +1,6 @@
-body,
-div,
-ul,
-li,
-img, 
-span
-{
-margin:0;
-padding:0;
+html, body, div, h1, ul, li, a, img, span {
+    margin: 0;
+    padding: 0;
 }
 
 @mixin linear-gradient($from-color,$from-pos,$to-color,$to-pos) 
@@ -18,74 +12,105 @@ padding:0;
     background: -o-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
     background: -ms-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
     background: linear-gradient(to bottom, $from-color $from-pos,$to-color $to-pos);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$from-color}', EndColorStr='#{$to-color}');
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${from-color}', endColorstr='${to-color}',GradientType=0 );
 }
 
-body
-{
-	font-size: 16px;
-	font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
-	#wrapper
-	{
-		width:960px;
-		margin-top: 50px;
-		margin-left: 50px;
 
-		.notification-list
-		{
-			list-style-type: none;
-			
-			li
-			{
-				display:inline-block;
-				position: relative;
-				border: 1px solid black;
-				padding: 3px 10px;
-				@include linear-gradient(#aaa,20%,#eee,80%);
+body {
+    $default-font-size: 16px;
+    $default-font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
+    $default-font-color: #777;
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    color: $default-font-color;
 
-				& > a
-				{
-					color:#777;
-					text-decoration: none;
-					
-				}
+    #wrapper {
+        width: 960px;
 
-				img
-				{
-					width: 10px;
-					height: 10px;
-				}
+        .notification-list {
+            margin-top: 25px;
+            margin-left: 25px;
+            list-style-type: none;
+            width: 470px;
+            display: inline-block;
+            @include linear-gradient(#aaa,0%,#ddd,80%);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border: 1px solid black;
+            border-bottom: none;
 
-				.content
-				{
-					display: none;
-					width: 470px;
-				}
-			}
+            & > li {
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+                height: 20px;
 
-			li:hover
-			{
-				.content
-				{
-					display:block;
-						
-					li:hover
-					{
-						text-decoration: underline;
-					}
-				}
-			}
+                & > a {
+                    font-size: 1.1em;
+                }
 
-			li:first-of-type
-			{
-				border-top-left-radius: 10px;
-			}
+                &:last-of-type {
+                    border-right: none;
+                }
 
-			li:last-of-type
-			{
-				border-top-right-radius: 10px;
-			}
-		}
-	}
+
+                &:hover {
+                    border-bottom: none;
+                }
+            }
+
+            li {
+                display: inline-block;
+                padding: 5px 15px;
+
+                & > a {
+                    color: $default-font-color;
+                    text-decoration: none;
+
+                    img {
+                        width: 15px;
+                    }
+                }
+
+                .content {
+                    display: none;
+                    width: 470px;
+                    position: absolute;
+                    left: 25px;
+                    margin-top: 5px;
+                    border: 1px solid black;
+                    border-top: none;
+                    @include linear-gradient(#ddd,30%,#ccc,100%);
+
+                    ul {
+                        li {
+                            display: block;
+
+                            a {
+                                color: $default-font-color;
+
+                                img {
+                                    margin-right: 5px;
+                                }
+								strong{
+									color:darken($default-font-color,10%);
+								}
+                            }
+
+                            &:hover {
+                                a {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .content {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
-

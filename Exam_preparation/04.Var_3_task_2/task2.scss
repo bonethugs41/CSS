@@ -1,0 +1,82 @@
+html,
+body,
+div,
+ul,
+a,
+img,
+li
+{
+	margin: 0;
+	padding: 0;
+}
+
+@mixin linear-gradient($from-color,$from-pos,$to-color,$to-pos) 
+{
+    background: $to-color;
+    background: -moz-linear-gradient(top, $from-color $from-pos, $to-color $to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($from-pos,$from-color), color-stop($to-pos,$to-color));
+    background: -webkit-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -o-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -ms-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: linear-gradient(to bottom, $from-color $from-pos,$to-color $to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${from-color}', endColorstr='${to-color}',GradientType=0 );
+}
+
+body
+{
+	$default-font-size: 16px;
+    $default-font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    $default-font-color: #000;
+	font-size: $default-font-size;
+	font-family: $default-font-family;
+	color: $default-font-color;
+
+	#wrapper
+	{
+		width: 960px;
+
+		.select-list
+		{
+			margin-left: 50px;
+			margin-top: 50px;
+
+			ul
+			{
+				@include linear-gradient(#8168FF, 0%, #FFFFFF, 100%);
+				list-style-type: none;
+				width:150px;
+				height: 200px;
+				overflow-y: scroll;
+				border-radius: 5px;
+				display: inline-block;
+
+				li
+				{
+					border-bottom: 1px solid black;
+					padding: 5px 15px;
+
+					&:first-letter
+					{
+						text-decoration: underline;
+					}
+
+					&.selected
+					{
+						background-color: #6C4EFF;
+					}
+
+					&:last-of-type
+					{
+						border: none;
+					}
+				}
+			}
+
+			& > a
+			{
+				position: relative;
+				top: -80px;
+			}
+		}
+	}
+}

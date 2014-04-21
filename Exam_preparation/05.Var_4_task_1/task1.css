@@ -1,0 +1,53 @@
+html,
+body,
+div,
+form,
+fieldset,
+legend,
+label,
+input,
+button {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px;
+  font-family: Constantina, Georgia, "Nimbus Roman No9 L", serif;
+  color: black; }
+  body #wrapper {
+    width: 960px; }
+    body #wrapper div {
+      margin-left: 25px;
+      margin-top: 25px;
+      background: #f9dbff;
+      background: -moz-linear-gradient(top, #de28ff 15%, #f9dbff 85%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #de28ff), color-stop(85%, #f9dbff));
+      background: -webkit-linear-gradient(top, #de28ff 15%, #f9dbff 85%);
+      background: -o-linear-gradient(top, #de28ff 15%, #f9dbff 85%);
+      background: -ms-linear-gradient(top, #de28ff 15%, #f9dbff 85%);
+      background: linear-gradient(to bottom, #de28ff 15%, #f9dbff 85%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='${from-color}', endColorstr='${to-color}',GradientType=0 );
+      border: 1px solid black;
+      border-radius: 15px;
+      padding: 0px 35px;
+      position: relative; }
+      body #wrapper div h1 {
+        font-size: 1.8em; }
+      body #wrapper div p.postedby {
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        width: 380px;
+        text-align: center;
+        padding: 5px 15px;
+        margin: 0px 15px;
+        display: inline-block; }
+      body #wrapper div p.info {
+        text-align: justify; }
+      body #wrapper div img {
+        position: absolute;
+        top: 40%; }
+      body #wrapper div img.left-arrow {
+        left: 0px; }
+      body #wrapper div img.right-arrow {
+        right: 0px; }
+
