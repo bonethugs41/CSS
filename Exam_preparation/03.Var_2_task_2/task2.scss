@@ -1,0 +1,91 @@
+body,
+div,
+ul,
+li,
+img, 
+span
+{
+margin:0;
+padding:0;
+}
+
+@mixin linear-gradient($from-color,$from-pos,$to-color,$to-pos) 
+{
+    background: $to-color;
+    background: -moz-linear-gradient(top, $from-color $from-pos, $to-color $to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($from-pos,$from-color), color-stop($to-pos,$to-color));
+    background: -webkit-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -o-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -ms-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: linear-gradient(to bottom, $from-color $from-pos,$to-color $to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$from-color}', EndColorStr='#{$to-color}');
+}
+
+body
+{
+	font-size: 16px;
+	font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
+	#wrapper
+	{
+		width:960px;
+		margin-top: 50px;
+		margin-left: 50px;
+
+		.notification-list
+		{
+			list-style-type: none;
+			
+			li
+			{
+				display:inline-block;
+				position: relative;
+				border: 1px solid black;
+				padding: 3px 10px;
+				@include linear-gradient(#aaa,20%,#eee,80%);
+
+				& > a
+				{
+					color:#777;
+					text-decoration: none;
+					
+				}
+
+				img
+				{
+					width: 10px;
+					height: 10px;
+				}
+
+				.content
+				{
+					display: none;
+					width: 470px;
+				}
+			}
+
+			li:hover
+			{
+				.content
+				{
+					display:block;
+						
+					li:hover
+					{
+						text-decoration: underline;
+					}
+				}
+			}
+
+			li:first-of-type
+			{
+				border-top-left-radius: 10px;
+			}
+
+			li:last-of-type
+			{
+				border-top-right-radius: 10px;
+			}
+		}
+	}
+}
+

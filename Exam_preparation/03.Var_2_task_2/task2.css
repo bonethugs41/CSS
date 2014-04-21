@@ -1,0 +1,49 @@
+body,
+div,
+ul,
+li,
+img,
+span {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px;
+  font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace; }
+  body #wrapper {
+    width: 960px;
+    margin-top: 50px;
+    margin-left: 50px; }
+    body #wrapper .notification-list {
+      list-style-type: none; }
+      body #wrapper .notification-list li {
+        display: inline-block;
+        position: relative;
+        border: 1px solid black;
+        padding: 3px 10px;
+        background: #eeeeee;
+        background: -moz-linear-gradient(top, #aaaaaa 20%, #eeeeee 80%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #aaaaaa), color-stop(80%, #eeeeee));
+        background: -webkit-linear-gradient(top, #aaaaaa 20%, #eeeeee 80%);
+        background: -o-linear-gradient(top, #aaaaaa 20%, #eeeeee 80%);
+        background: -ms-linear-gradient(top, #aaaaaa 20%, #eeeeee 80%);
+        background: linear-gradient(to bottom, #aaaaaa 20%, #eeeeee 80%);
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#aaaaaa', EndColorStr='#eeeeee'); }
+        body #wrapper .notification-list li > a {
+          color: #777;
+          text-decoration: none; }
+        body #wrapper .notification-list li img {
+          width: 10px;
+          height: 10px; }
+        body #wrapper .notification-list li .content {
+          display: none;
+          width: 470px; }
+      body #wrapper .notification-list li:hover .content {
+        display: block; }
+        body #wrapper .notification-list li:hover .content li:hover {
+          text-decoration: underline; }
+      body #wrapper .notification-list li:first-of-type {
+        border-top-left-radius: 10px; }
+      body #wrapper .notification-list li:last-of-type {
+        border-top-right-radius: 10px; }
+

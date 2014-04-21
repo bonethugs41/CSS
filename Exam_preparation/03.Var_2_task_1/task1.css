@@ -1,0 +1,108 @@
+body,
+div,
+ul,
+li,
+h1,
+p,
+table,
+th,
+tbody,
+thead,
+img {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 18px;
+  font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  color: #555; }
+  body #wrapper {
+    width: 960px;
+    margin-top: 50px;
+    margin-left: 50px; }
+    body #wrapper .accordion {
+      width: 400px;
+      list-style-type: none; }
+      body #wrapper .accordion li {
+        display: block;
+        position: relative;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: bold; }
+        body #wrapper .accordion li:hover {
+          background: #aaa;
+          cursor: pointer; }
+        body #wrapper .accordion li .accordion-btn {
+          text-decoration: none;
+          color: #555;
+          display: block;
+          background: #aaaaaa;
+          background: -moz-linear-gradient(top, #eeeeee 25%, #aaaaaa 75%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #eeeeee), color-stop(75%, #aaaaaa));
+          background: -webkit-linear-gradient(top, #eeeeee 25%, #aaaaaa 75%);
+          background: -o-linear-gradient(top, #eeeeee 25%, #aaaaaa 75%);
+          background: -ms-linear-gradient(top, #eeeeee 25%, #aaaaaa 75%);
+          background: linear-gradient(to bottom, #eeeeee 25%, #aaaaaa 75%);
+          filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeeee', EndColorStr='#aaaaaa'); }
+        body #wrapper .accordion li .accordion-content {
+          display: none;
+          text-align: left;
+          font-size: 0.8em;
+          font-weight: normal;
+          background: #aaa; }
+          body #wrapper .accordion li .accordion-content h1 {
+            text-align: center;
+            font-size: 1.5em;
+            padding: 10px 0px;
+            color: #5e5e5e; }
+          body #wrapper .accordion li .accordion-content p {
+            text-align: justify;
+            margin: 5px 15px;
+            margin-top: 0;
+            font-size: 0.9em; }
+          body #wrapper .accordion li .accordion-content table {
+            border-collapse: collapse;
+            margin: 15px auto;
+            border-radius: 5px;
+            border: 1px solid black; }
+            body #wrapper .accordion li .accordion-content table thead tr {
+              background: #888888;
+              background: -moz-linear-gradient(top, #eeeeee 0%, #888888 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #888888));
+              background: -webkit-linear-gradient(top, #eeeeee 0%, #888888 100%);
+              background: -o-linear-gradient(top, #eeeeee 0%, #888888 100%);
+              background: -ms-linear-gradient(top, #eeeeee 0%, #888888 100%);
+              background: linear-gradient(to bottom, #eeeeee 0%, #888888 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeeee', EndColorStr='#888888');
+              border-top-right-radius: 15px; }
+              body #wrapper .accordion li .accordion-content table thead tr th:first-of-type {
+                border-top-left-radius: 15px; }
+            body #wrapper .accordion li .accordion-content table tbody tr {
+              background: #cccccc;
+              background: -moz-linear-gradient(top, #888888 0%, #cccccc 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #888888), color-stop(100%, #cccccc));
+              background: -webkit-linear-gradient(top, #888888 0%, #cccccc 100%);
+              background: -o-linear-gradient(top, #888888 0%, #cccccc 100%);
+              background: -ms-linear-gradient(top, #888888 0%, #cccccc 100%);
+              background: linear-gradient(to bottom, #888888 0%, #cccccc 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#888888', EndColorStr='#cccccc'); }
+              body #wrapper .accordion li .accordion-content table tbody tr:nth-of-type(2n+1) {
+                background: #888888;
+                background: -moz-linear-gradient(top, #cccccc 0%, #888888 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #888888));
+                background: -webkit-linear-gradient(top, #cccccc 0%, #888888 100%);
+                background: -o-linear-gradient(top, #cccccc 0%, #888888 100%);
+                background: -ms-linear-gradient(top, #cccccc 0%, #888888 100%);
+                background: linear-gradient(to bottom, #cccccc 0%, #888888 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#cccccc', EndColorStr='#888888'); }
+              body #wrapper .accordion li .accordion-content table tbody tr td {
+                color: #fff; }
+            body #wrapper .accordion li .accordion-content table td, body #wrapper .accordion li .accordion-content table th {
+              border: 1px solid black;
+              padding: 5px; }
+        body #wrapper .accordion li.current .accordion-btn {
+          border-bottom: none; }
+        body #wrapper .accordion li.current .accordion-content {
+          display: block; }
+

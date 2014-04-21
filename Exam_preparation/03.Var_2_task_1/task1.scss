@@ -1,0 +1,157 @@
+body,
+div,
+ul,
+li,
+h1,
+p,
+table,
+th,
+tbody,
+thead,
+img
+{
+margin: 0;
+padding: 0;
+}
+
+@mixin linear-gradient($from-color,$from-pos,$to-color,$to-pos) 
+{
+    background: $to-color;
+    background: -moz-linear-gradient(top, $from-color $from-pos, $to-color $to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($from-pos,$from-color), color-stop($to-pos,$to-color));
+    background: -webkit-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -o-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -ms-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: linear-gradient(to bottom, $from-color $from-pos,$to-color $to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$from-color}', EndColorStr='#{$to-color}');
+}
+
+body
+{
+	font-size: 18px;
+	font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+	color: #555;
+
+	#wrapper
+	{
+		width: 960px;
+		margin-top: 50px;
+		margin-left: 50px;
+
+		.accordion
+		{
+			width:400px;
+			list-style-type: none;
+
+			li
+			{
+				display:block;
+				position: relative;
+				border: 1px solid black;
+				text-align: center;
+				font-size: 1.3em;
+				font-weight: bold;
+
+				&:hover
+				{
+					background: #aaa;
+					cursor: pointer;
+				}
+
+				.accordion-btn
+				{
+					text-decoration: none;
+					color: #555;
+					display: block;
+					@include linear-gradient(#eee,25%,#aaa,75%);
+				}
+
+				.accordion-content
+				{
+					display: none;
+					text-align: left;
+					font-size: 0.8em;
+					font-weight: normal;
+					background: #aaa;
+
+					h1
+					{
+						text-align: center;
+						font-size: 1.5em;
+						padding: 10px 0px;
+						color: lighten( #444,10%);
+					}
+
+					p
+					{
+						text-align: justify;
+						margin: 5px 15px;
+						margin-top: 0;
+						font-size: 0.9em;
+					}
+
+					table {
+                        border-collapse: collapse;
+                        margin: 15px auto;
+                        border-radius: 5px;
+                        border: 1px solid black;
+
+                        thead 
+						{
+                            tr 
+							{
+                                @include linear-gradient(#eee,0%,#888,100%);
+                                border-top-right-radius: 15px;
+
+                                th 
+								{
+                                    &:first-of-type 
+									{
+                                        border-top-left-radius: 15px;
+                                    }
+                                }
+                            }
+                        }
+
+                        tbody 
+						{
+                            tr 
+							{
+                                @include linear-gradient(#888,0%,#ccc,100%);
+
+                                &:nth-of-type(2n+1) 
+								{
+                                    @include linear-gradient(#ccc,0%,#888,100%);
+                                }
+								td
+								{
+									color:#fff;
+								}
+                            }
+                        }
+
+                        td, th 
+						{
+                            border: 1px solid black;
+                            padding: 5px;
+                        }
+                    }
+
+				}
+
+				&.current 
+				{
+                    .accordion-btn 
+					{
+                        border-bottom: none;
+                    }
+
+                    .accordion-content 
+					{
+                        display: block;
+                    }
+                }
+			}
+		}
+	}
+}
