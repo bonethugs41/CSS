@@ -1,0 +1,87 @@
+html,
+body,
+div,
+h2,
+h3,
+p,
+a {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px;
+  font-family: Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
+  color: black; }
+  body #wrapper {
+    width: 960px;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: block; }
+    body #wrapper:after {
+      clear: both;
+      content: "";
+      display: block;
+      height: 0; }
+    body #wrapper > div {
+      float: left;
+      top: 0px;
+      width: 140px;
+      height: 250px;
+      border-top: 2px solid #D3D7DA;
+      border-bottom: 2px solid #D3D7DA;
+      padding: 5px;
+      padding-top: 10px; }
+      body #wrapper > div:nth-of-type(2n) {
+        background: #f1f2f3;
+        background: -moz-linear-gradient(top, white 0%, #f1f2f3 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f1f2f3));
+        background: -webkit-linear-gradient(top, white 0%, #f1f2f3 100%);
+        background: -o-linear-gradient(top, white 0%, #f1f2f3 100%);
+        background: -ms-linear-gradient(top, white 0%, #f1f2f3 100%);
+        background: linear-gradient(to bottom, white 0%, #f1f2f3 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='${from-color}', endColorstr='${to-color}',GradientType=0 );
+        border-right: 2px solid #D3D7DA;
+        border-left: 2px solid #D3D7DA;
+        height: 270px; }
+      body #wrapper > div:nth-of-type(1) {
+        background: url("imgs/install.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); }
+      body #wrapper > div:nth-of-type(2) {
+        background: url("imgs/tuneUp.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); }
+      body #wrapper > div:nth-of-type(3) {
+        background: url("imgs/manage.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); }
+      body #wrapper > div:nth-of-type(4) {
+        background: url("imgs/openSource.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); }
+      body #wrapper > div:nth-of-type(5) {
+        background: url("imgs/twitter.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); }
+      body #wrapper > div:nth-of-type(6) {
+        background: url("imgs/about.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); }
+      body #wrapper > div:first-of-type {
+        border-left: 2px solid #D3D7DA; }
+      body #wrapper > div a {
+        text-decoration: none;
+        color: #C72D2F;
+        display: block; }
+        body #wrapper > div a span {
+          text-transform: uppercase; }
+      body #wrapper > div hgroup {
+        background-position: left bottom !important;
+        display: table-cell;
+        height: 40px;
+        padding-left: 40px;
+        vertical-align: bottom; }
+      body #wrapper > div p {
+        margin-bottom: 5px; }
+
+.yellowBox {
+  background-color: #FFFFDD;
+  border: 1px solid #FFFF00; }
+
+body #wrapper div div.yellowBox a {
+  display: inline-block; }
+
+h2, h3 {
+  font-size: 16px; }
+
+h2 {
+  padding-bottom: 10px; }
+
