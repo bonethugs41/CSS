@@ -1,0 +1,121 @@
+body,
+div,
+ul,
+li,
+a,
+img
+{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+	#008000
+*/
+
+@mixin linear-gradient($from-color,$from-pos,$to-color,$to-pos) 
+{
+    background: $to-color;
+    background: -moz-linear-gradient(top, $from-color $from-pos, $to-color $to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($from-pos,$from-color), color-stop($to-pos,$to-color));
+    background: -webkit-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -o-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -ms-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: linear-gradient(to bottom, $from-color $from-pos,$to-color $to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${from-color}', endColorstr='${to-color}',GradientType=0 );
+}
+
+body
+{
+	$default-font-size: 16px;
+    $default-font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+    $default-font-color: #000;
+	font-size: $default-font-size;
+	font-family: $default-font-family;
+	color: $default-font-color;
+
+	#wrapper
+	{
+		width: 960px;
+		margin-left: 25px;
+		margin-top: 25px;
+
+		ul.menu
+		{
+			display: block;
+			li
+			{
+				list-style-type: none;
+				display: block;
+				position: relative;
+				width: 125px;
+				text-align: center;
+				padding: 10px 20px;
+				margin-bottom: 5px;
+				border-radius: 15px;
+				background-color: #b6ff00;
+
+				a
+				{
+					text-decoration: none;
+					color: $default-font-color;
+
+					&:hover
+					{
+						text-decoration: underline;
+					}
+				}
+
+				div.content
+				{
+					display: none;
+				}
+
+				&:hover
+				{
+					div.content
+					{
+						display: block;
+						position: absolute;
+						left: 165px;
+						top: 0px;
+
+						.sub-menu
+						{
+							li
+							{	
+								background: #008000;
+								text-align: left;
+								padding: 20px;
+								margin-bottom: 10px;
+								width: 510px;
+
+								a
+								{
+									color:#FFFFFF;
+									margin-bottom: 15px;
+								}
+
+								img
+								{
+									display: none;
+								}
+
+								&:hover
+									{
+										img
+										{
+											display: block;
+											width: 500px;
+											border-radius: 15px;
+											margin-top: 10px;
+										}
+									}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,79 @@
+body,
+div,
+h1,
+img,
+button,
+li,
+strong {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 14px;
+  font-family: "Times New Roman";
+  color: black; }
+  body #root {
+    width: 700px;
+    margin-left: 25px;
+    margin-top: 25px; }
+    body #root #previewer {
+      margin-left: 15px;
+      margin-top: 15px;
+      padding: 10px; }
+      body #root #previewer #large {
+        border: 2px solid #AAAAAA;
+        float: left;
+        text-align: center; }
+        body #root #previewer #large h1 {
+          padding: 15px; }
+        body #root #previewer #large img {
+          border-radius: 5px;
+          border: 2px solid #aaaaaa;
+          margin: 15px;
+          margin-top: 0px;
+          width: 400px; }
+      body #root #previewer #list {
+        border: 2px solid #AAAAAA;
+        float: left;
+        width: 175px; }
+        body #root #previewer #list .title {
+          font-size: 20px;
+          display: block;
+          text-align: center;
+          margin: 5px; }
+        body #root #previewer #list button {
+          border-radius: 5px;
+          border: 2px solid #aaaaaa;
+          background: #cccccc;
+          padding: 15px 25px;
+          display: inline-block;
+          position: relative; }
+          body #root #previewer #list button:hover {
+            background: #eeeeee; }
+        body #root #previewer #list ul {
+          list-style-type: none;
+          overflow-y: scroll;
+          height: 245px;
+          text-align: center;
+          position: relative;
+          width: 175px;
+          left: -40px;
+          top: -10px; }
+          body #root #previewer #list ul li {
+            width: 154px;
+            left: 3px;
+            position: relative;
+            font-size: 12px;
+            border-bottom: 2px solid #aaaaaa;
+            padding-top: 5px; }
+            body #root #previewer #list ul li:hover {
+              text-decoration: underline; }
+            body #root #previewer #list ul li img {
+              width: 80px;
+              border-radius: 5px;
+              margin: 5px 15px; }
+          body #root #previewer #list ul li.current {
+            background: #cccccc;
+            border-bottom: 2px solid #aaaaaa;
+            border-radius: 5px; }
+

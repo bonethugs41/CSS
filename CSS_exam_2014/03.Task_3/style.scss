@@ -1,0 +1,143 @@
+body,
+div,
+h1,
+img,
+button,
+li,
+strong
+{
+	margin: 0;
+	padding: 0;
+}
+
+@mixin linear-gradient($from-color,$from-pos,$to-color,$to-pos) 
+{
+    background: $to-color;
+    background: -moz-linear-gradient(top, $from-color $from-pos, $to-color $to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($from-pos,$from-color), color-stop($to-pos,$to-color));
+    background: -webkit-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -o-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -ms-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: linear-gradient(to bottom, $from-color $from-pos,$to-color $to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${from-color}', endColorstr='${to-color}',GradientType=0 );
+}
+
+body
+{
+	$default-font-size: 14px;
+    $default-font-family: 'Times New Roman';
+    $default-font-color: #000;
+	font-size: $default-font-size;
+	font-family: $default-font-family;
+	color: $default-font-color;
+
+	#root
+	{
+		width: 700px;
+		margin-left: 25px;
+		margin-top: 25px;
+
+		#previewer
+		{
+			margin-left: 15px;
+			margin-top: 15px;
+			padding: 10px;
+
+
+
+			#large
+			{
+				border: 2px solid #AAAAAA;
+				float: left;
+				text-align: center;
+
+				h1
+				{
+					padding: 15px;
+				}
+
+				img
+				{
+					border-radius: 5px;
+					border: 2px solid #aaaaaa;
+					margin: 15px;
+					margin-top: 0px;
+					width:400px;
+				}
+
+			}
+
+			#list
+			{
+				border: 2px solid #AAAAAA;
+				float: left;
+				width: 175px;
+
+				.title
+				{
+					font-size: 20px;
+					display: block;
+					text-align: center;
+					margin: 5px;
+				}
+
+				button
+				{
+					border-radius: 5px;
+					border: 2px solid #aaaaaa;
+					background: #cccccc;
+					padding: 15px 25px;
+					display: inline-block;
+					position: relative;
+						
+					&:hover
+					{
+						background: #eeeeee;
+					}
+				}
+
+				ul
+				{
+					list-style-type: none;
+					overflow-y: scroll;
+					height: 245px;
+					text-align: center;
+					position: relative;
+					width: 175px;
+					left: -40px;
+					top: -10px;
+
+					li
+					{
+						width: 154px;
+						left: 3px;
+						position: relative;
+						font-size: 12px;
+						border-bottom: 2px solid #aaaaaa;
+						padding-top: 5px;
+
+						&:hover
+						{
+							text-decoration: underline;
+						}
+
+						img
+						{
+							width: 80px;
+							border-radius: 5px;
+							margin: 5px 15px;
+						}
+					}
+
+					li.current
+					{
+						background: #cccccc;
+						border-bottom: 2px solid #aaaaaa;
+						border-radius: 5px;
+					}
+				}
+			}
+
+		}
+	}
+}

@@ -1,0 +1,91 @@
+html,
+body,
+h1,
+ul,
+li,
+a,
+nav,
+div,
+article {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 14px;
+  font-family: Tahoma, sans-serif;
+  color: black; }
+  body #wrapper {
+    width: 960px;
+    margin: 0px auto; }
+    body #wrapper #archive ul {
+      list-style-type: none; }
+      body #wrapper #archive ul li {
+        display: inline-block;
+        float: left;
+        padding: 5px 5px;
+        font-size: 10px; }
+        body #wrapper #archive ul li:first-of-type {
+          margin-left: 760px; }
+        body #wrapper #archive ul li:after {
+          content: "";
+          display: block;
+          height: 0;
+          clear: both; }
+        body #wrapper #archive ul li a {
+          text-decoration: none;
+          color: black; }
+    body #wrapper #header {
+      display: block;
+      background: #d54900;
+      /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q1NDkwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIlIiBzdG9wLWNvbG9yPSIjZGQ2YzNiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMyUiIHN0b3AtY29sb3I9IiNkNjQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1JSIgc3RvcC1jb2xvcj0iI2Q1NDkwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYlIiBzdG9wLWNvbG9yPSIjZGQ2YzNiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOCUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMSUiIHN0b3AtY29sb3I9IiNkZDZjM2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMyUiIHN0b3AtY29sb3I9IiNkNjQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxNCUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxNiUiIHN0b3AtY29sb3I9IiNkZTZjM2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxNyUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxOSUiIHN0b3AtY29sb3I9IiNkNjRhMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIyMSUiIHN0b3AtY29sb3I9IiNkZTZjM2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIyMiUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIyNCUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9IiNkZTZjM2EiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIyNyUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIyOSUiIHN0b3AtY29sb3I9IiNkNjQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiNkZDZhMzciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzMiUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzMyUiIHN0b3AtY29sb3I9IiNkNjQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzNSUiIHN0b3AtY29sb3I9IiNkZDY4MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzNyUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzOCUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiNkYzY1MzAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI0MSUiIHN0b3AtY29sb3I9IiNkNjQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI0MyUiIHN0b3AtY29sb3I9IiNkNjQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI0NCUiIHN0b3AtY29sb3I9IiNkYjYzMmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI0NiUiIHN0b3AtY29sb3I9IiNkNjQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI0OCUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI0OSUiIHN0b3AtY29sb3I9IiNkYTYwMjgiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MiUiIHN0b3AtY29sb3I9IiNkNjQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1NCUiIHN0b3AtY29sb3I9IiNkYTVlMjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1NiUiIHN0b3AtY29sb3I9IiNkNjQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1NyUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1OSUiIHN0b3AtY29sb3I9IiNkYTVhMWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2MiUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2MyUiIHN0b3AtY29sb3I9IiNkOTU3MWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2NyUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2OCUiIHN0b3AtY29sb3I9IiNkOTU1MTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI3MCUiIHN0b3AtY29sb3I9IiNkNjQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI3MSUiIHN0b3AtY29sb3I9IiNkNTQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI3MyUiIHN0b3AtY29sb3I9IiNkNzUxMGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiNkNjQ5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZDU0OTAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+      background: -moz-linear-gradient(top, #d54900 0%, #dd6c3b 2%, #d64900 3%, #d54900 5%, #dd6c3b 6%, #d54900 8%, #d54900 10%, #dd6c3b 11%, #d64900 13%, #d54900 14%, #de6c3b 16%, #d54900 17%, #d64a00 19%, #de6c3b 21%, #d54900 22%, #d54900 24%, #de6c3a 25%, #d54900 27%, #d64900 29%, #dd6a37 30%, #d54900 32%, #d64900 33%, #dd6835 35%, #d54900 37%, #d54900 38%, #dc6530 40%, #d64900 41%, #d64900 43%, #db632d 44%, #d64900 46%, #d54900 48%, #da6028 49%, #d54900 51%, #d64900 52%, #da5e24 54%, #d64900 56%, #d54900 57%, #da5a1f 59%, #d54900 60%, #d54900 62%, #d9571a 63%, #d54900 65%, #d54900 67%, #d95514 68%, #d64900 70%, #d54900 71%, #d7510d 73%, #d64900 75%, #d54900 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d54900), color-stop(2%, #dd6c3b), color-stop(3%, #d64900), color-stop(5%, #d54900), color-stop(6%, #dd6c3b), color-stop(8%, #d54900), color-stop(10%, #d54900), color-stop(11%, #dd6c3b), color-stop(13%, #d64900), color-stop(14%, #d54900), color-stop(16%, #de6c3b), color-stop(17%, #d54900), color-stop(19%, #d64a00), color-stop(21%, #de6c3b), color-stop(22%, #d54900), color-stop(24%, #d54900), color-stop(25%, #de6c3a), color-stop(27%, #d54900), color-stop(29%, #d64900), color-stop(30%, #dd6a37), color-stop(32%, #d54900), color-stop(33%, #d64900), color-stop(35%, #dd6835), color-stop(37%, #d54900), color-stop(38%, #d54900), color-stop(40%, #dc6530), color-stop(41%, #d64900), color-stop(43%, #d64900), color-stop(44%, #db632d), color-stop(46%, #d64900), color-stop(48%, #d54900), color-stop(49%, #da6028), color-stop(51%, #d54900), color-stop(52%, #d64900), color-stop(54%, #da5e24), color-stop(56%, #d64900), color-stop(57%, #d54900), color-stop(59%, #da5a1f), color-stop(60%, #d54900), color-stop(62%, #d54900), color-stop(63%, #d9571a), color-stop(65%, #d54900), color-stop(67%, #d54900), color-stop(68%, #d95514), color-stop(70%, #d64900), color-stop(71%, #d54900), color-stop(73%, #d7510d), color-stop(75%, #d64900), color-stop(100%, #d54900));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #d54900 0%, #dd6c3b 2%, #d64900 3%, #d54900 5%, #dd6c3b 6%, #d54900 8%, #d54900 10%, #dd6c3b 11%, #d64900 13%, #d54900 14%, #de6c3b 16%, #d54900 17%, #d64a00 19%, #de6c3b 21%, #d54900 22%, #d54900 24%, #de6c3a 25%, #d54900 27%, #d64900 29%, #dd6a37 30%, #d54900 32%, #d64900 33%, #dd6835 35%, #d54900 37%, #d54900 38%, #dc6530 40%, #d64900 41%, #d64900 43%, #db632d 44%, #d64900 46%, #d54900 48%, #da6028 49%, #d54900 51%, #d64900 52%, #da5e24 54%, #d64900 56%, #d54900 57%, #da5a1f 59%, #d54900 60%, #d54900 62%, #d9571a 63%, #d54900 65%, #d54900 67%, #d95514 68%, #d64900 70%, #d54900 71%, #d7510d 73%, #d64900 75%, #d54900 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #d54900 0%, #dd6c3b 2%, #d64900 3%, #d54900 5%, #dd6c3b 6%, #d54900 8%, #d54900 10%, #dd6c3b 11%, #d64900 13%, #d54900 14%, #de6c3b 16%, #d54900 17%, #d64a00 19%, #de6c3b 21%, #d54900 22%, #d54900 24%, #de6c3a 25%, #d54900 27%, #d64900 29%, #dd6a37 30%, #d54900 32%, #d64900 33%, #dd6835 35%, #d54900 37%, #d54900 38%, #dc6530 40%, #d64900 41%, #d64900 43%, #db632d 44%, #d64900 46%, #d54900 48%, #da6028 49%, #d54900 51%, #d64900 52%, #da5e24 54%, #d64900 56%, #d54900 57%, #da5a1f 59%, #d54900 60%, #d54900 62%, #d9571a 63%, #d54900 65%, #d54900 67%, #d95514 68%, #d64900 70%, #d54900 71%, #d7510d 73%, #d64900 75%, #d54900 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #d54900 0%, #dd6c3b 2%, #d64900 3%, #d54900 5%, #dd6c3b 6%, #d54900 8%, #d54900 10%, #dd6c3b 11%, #d64900 13%, #d54900 14%, #de6c3b 16%, #d54900 17%, #d64a00 19%, #de6c3b 21%, #d54900 22%, #d54900 24%, #de6c3a 25%, #d54900 27%, #d64900 29%, #dd6a37 30%, #d54900 32%, #d64900 33%, #dd6835 35%, #d54900 37%, #d54900 38%, #dc6530 40%, #d64900 41%, #d64900 43%, #db632d 44%, #d64900 46%, #d54900 48%, #da6028 49%, #d54900 51%, #d64900 52%, #da5e24 54%, #d64900 56%, #d54900 57%, #da5a1f 59%, #d54900 60%, #d54900 62%, #d9571a 63%, #d54900 65%, #d54900 67%, #d95514 68%, #d64900 70%, #d54900 71%, #d7510d 73%, #d64900 75%, #d54900 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #d54900 0%, #dd6c3b 2%, #d64900 3%, #d54900 5%, #dd6c3b 6%, #d54900 8%, #d54900 10%, #dd6c3b 11%, #d64900 13%, #d54900 14%, #de6c3b 16%, #d54900 17%, #d64a00 19%, #de6c3b 21%, #d54900 22%, #d54900 24%, #de6c3a 25%, #d54900 27%, #d64900 29%, #dd6a37 30%, #d54900 32%, #d64900 33%, #dd6835 35%, #d54900 37%, #d54900 38%, #dc6530 40%, #d64900 41%, #d64900 43%, #db632d 44%, #d64900 46%, #d54900 48%, #da6028 49%, #d54900 51%, #d64900 52%, #da5e24 54%, #d64900 56%, #d54900 57%, #da5a1f 59%, #d54900 60%, #d54900 62%, #d9571a 63%, #d54900 65%, #d54900 67%, #d95514 68%, #d64900 70%, #d54900 71%, #d7510d 73%, #d64900 75%, #d54900 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d54900', endColorstr='#d54900',GradientType=0 );
+      /* IE6-8 */ }
+      body #wrapper #header h1 {
+        color: #FFFFFF;
+        display: block;
+        font-size: 28px;
+        text-align: right;
+        position: relative;
+        top: -15px;
+        right: 15px; }
+      body #wrapper #header #nav {
+        height: 25px; }
+        body #wrapper #header #nav ul {
+          list-style-type: none;
+          margin-left: 30px; }
+          body #wrapper #header #nav ul li {
+            display: inline-block; }
+            body #wrapper #header #nav ul li:first-letter {
+              text-transform: uppercase; }
+            body #wrapper #header #nav ul li a {
+              text-decoration: none;
+              color: #FFFFFF;
+              margin-left: 15px;
+              font-size: 18px;
+              position: relative;
+              top: 18px; }
+    body #wrapper #content {
+      color: #333; }
+      body #wrapper #content h1 {
+        font-size: 24px;
+        margin: 15px 0px; }
+      body #wrapper #content article {
+        text-align: justify;
+        font-weight: normal; }
+  body .clear {
+    clear: both; }
+
